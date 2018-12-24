@@ -1,6 +1,7 @@
 const Discord = require("discord.js")
 const client = new Discord.Client()
 const fs = require("fs")
+var prefix = "!";
 let ar = JSON.parse(fs.readFileSync(`AutoRole.json`, `utf8`))
 client.on('message', message => {
   var sender = message.author
